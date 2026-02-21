@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Special Memory</title>
+
+<style>
+body {
+margin: 0;
+background: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+
+img {
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+button {
+position: absolute;
+bottom: 50px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 2;
+padding: 18px 35px;
+font-size: 22px;
+border: none;
+border-radius: 50px;
+background: linear-gradient(135deg, #ffffff, #e6e6e6);
+cursor: pointer;
+box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+transition: all 0.3s ease;
+font-weight: bold;
+}
+
+button:hover {
+background: white;
+}
+
+button:active {
+transform: scale(0.95);
+}
+</style>
+</head>
+
+<body>
+
+<img src="b872f9e97147b521ee148d3f851e160a.jpg">
+
+<button onclick="playMusic()">▶ Play</button>
+
+<audio id="audio">
+<source src="AUDIO-2026-02-20-20-32-17.m4a" type="audio/mp4">
+</audio>
+
+<script>
+function playMusic() {
+document.getElementById("audio").play();
+}
+</script>
+
+</body>
+</html>
